@@ -12,7 +12,7 @@ import time
 
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
 # distribute argument
-parser.add_argument('--world-size', default=1, type=int)
+parser.add_argument('--world-size', default=2, type=int,required=True)
 parser.add_argument('--dist-url', default='tcp://yourip:freeport', type=str,required=True)
 # parser.add_argument('--dist-url', default='tcp://127.0.0.1:freeport', type=str)
 parser.add_argument('--dist-backend', default='nccl', type=str, help='distributed backend')
