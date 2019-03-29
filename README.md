@@ -6,7 +6,8 @@ This example is mainly based on the [offical tutorial](https://github.com/pytorc
 - Install PyTorch1.0 ([pytorch.org](http://pytorch.org)).
 - A machine with multiple gpus or a cluster with multiple nodes to enable distributed learning.
 
-##Training
+## Training
+
 ### Single node, multiple GPUs:
 Note: For single node training, the --gpu_use should equal to --world_size 
 ```bash
@@ -28,11 +29,11 @@ Node 1:
 python main.py --dist-url 'tcp://ip:FREEPORT' --multiprocessing-distributed --rank_start 2 --world-size 4 --gpu_use 2
 ``` 
 
-##TODO
+## TODO
 - [ ] Docker support
 - [ ] kubernetes & kuberflow support
 
-##Reference
+## Reference
 [official tutorials](https://pytorch.org/tutorials/intermediate/dist_tuto.html)
 
 [official document](https://pytorch.org/docs/stable/distributed.html)
