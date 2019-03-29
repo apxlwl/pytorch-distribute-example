@@ -21,12 +21,12 @@ The world-size should be sum of total gpu usage, since we follow the official re
 
 Node 0:
 ```bash
-python main.py --dist-url 'tcp://ip:FREEPORT' --multiprocessing-distributed --rank_start 0 --world-size 4 --gpu_use 2
+python main.py --dist-url 'tcp://ip:FREEPORT' --node 0 --multiprocessing-distributed --rank_start 0 --world-size 4 --gpu_use 2
 ```
 
 Node 1:
 ```bash
-python main.py --dist-url 'tcp://ip:FREEPORT' --multiprocessing-distributed --rank_start 2 --world-size 4 --gpu_use 2
+python main.py --dist-url 'tcp://ip:FREEPORT' --node 1 --multiprocessing-distributed --rank_start 2 --world-size 4 --gpu_use 2
 ``` 
 
 ## TODO
