@@ -29,9 +29,6 @@ Node 1:
 python main.py --dist-url 'tcp://ip:FREEPORT' --node 1 --multiprocessing-distributed --rank_start 2 --world-size 4 --gpu_use 2
 ``` 
 
-## TODO
-- [ ] Docker support
-- [ ] kubernetes & kuberflow support
 
 ## Reference
 [official tutorials](https://pytorch.org/tutorials/intermediate/dist_tuto.html)
